@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "lite-server": "^2.3.0"
   }
 }
