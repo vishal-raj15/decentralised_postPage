@@ -1,6 +1,6 @@
 # decentralised_postPage
 
-this is a basic decentralised posting news platform built in truffle framework and with smartt contract in solidity
+this is a basic decentralised posting news platform built in truffle framework and with smart contract in solidity
 
 clone this repo
 
