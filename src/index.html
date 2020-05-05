@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Decentralized Newsfeed</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Decentralized Newsfeed</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="newsRow" class="row">
+        <!-- PETS LOAD HERE -->
+      </div>
+      <!-- <button class="btn btn-default" type="button" class="aaaaaddProd">Add Product</button> -->
+     <!-- Button trigger modal -->
+  <button type="button" style="align:center;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Add News
+  </button>
+    </div>
+
+   
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      
+      <!-- Modal Content-->
+      <div class="modal-content">
+
+        <!--Modal Header-->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Add News</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--Modal Body-->
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <textarea class="form-control postbox" id="post" placeholder="Add you story Here..." rows="5"></textarea>
+                </div>
+                                
+                <button type="submit" data-dismiss="modal" class="btn btn-primary addNews">Post News</button>
+              </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="postTemplate" style="display: none;">
+
+      <div class="col-md-12">
+        <div class="panel panel-default panel-pet">
+
+          <div class="panel-heading">
+            <strong>Publisher Address</strong> <h3 class="panel-title"> Account Address </h3>
+          </div>
+
+          <div class="panel-body">
+
+            <strong>Descrition</strong>: <span class="desc"> </span><br/>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
