@@ -4,7 +4,7 @@ this is a basic decentralised posting news platform built in truffle framework a
 
 clone this repo
 
-start ganache
+start ganache for your personal blockchain
 
 login to metamask extension(as local host with port running on ganache i.e localhost:7545
 
